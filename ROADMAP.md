@@ -125,7 +125,7 @@ This separation allows the core parsing logic to be unit-tested in isolation and
 
 ## Status
 
-- [ ] Phase 1 – `.map` Format Parser
+- [ ] Phase 1 – `.map` Format Parser  <== IN PROGRESS
 - [ ] Phase 2 – Rendertheme XML Parser
 - [ ] Phase 3 – Metal Foundations
 - [ ] Phase 4 – Tile Rendering
@@ -154,4 +154,6 @@ Before opening a pull request, please open an issue to discuss the change, espec
 
 ## License
 
-To be determined. Note that Mapsforge itself is LGPL-licensed; license compatibility needs to be considered when porting code or referencing the original implementation.
+MapsforgeKit is licensed under the **GNU Lesser General Public License v3.0** (LGPL-3.0), matching the license of the original Mapsforge project. See [LICENSE](LICENSE) for the full text and [COPYING](COPYING) for the GPL v3.0 that it references.
+
+This means MapsforgeKit can be linked into applications, including commercial and closed-source ones, while modifications to MapsforgeKit itself must be released under LGPL-3.0. Using the same license as upstream Mapsforge keeps porting code and interoperating between the two projects straightforward.
