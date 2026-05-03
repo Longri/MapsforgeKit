@@ -1,0 +1,66 @@
+# Mapsforge public-field schema snapshot.
+# Generated automatically by MapsforgeSchemaSnapshotTest.
+# Do not edit by hand — regenerate by deleting and re-running the test.
+
+class org.mapsforge.core.model.BoundingBox
+    public final double maxLatitude
+    public final double maxLongitude
+    public final double minLatitude
+    public final double minLongitude
+
+class org.mapsforge.core.model.LatLong
+    public final double latitude
+    public final double longitude
+
+class org.mapsforge.core.model.Tag
+    public final java.lang.String key
+    public final int keyCode
+    public final java.lang.String value
+    public final int valueCode
+
+class org.mapsforge.core.model.Tile
+    private org.mapsforge.core.model.BoundingBox boundingBox
+    public final long mapSize
+    private org.mapsforge.core.model.Point origin
+    public final int tileSize
+    public final int tileX
+    public final int tileY
+    public final byte zoomLevel
+
+class org.mapsforge.map.datastore.MapReadResult
+    private final java.util.Set<java.lang.Integer> hashPois
+    private final java.util.Set<java.lang.Integer> hashWays
+    public boolean isWater
+    public java.util.List<org.mapsforge.map.datastore.PointOfInterest> pointOfInterests
+    public java.util.List<org.mapsforge.map.datastore.Way> ways
+
+class org.mapsforge.map.datastore.PointOfInterest
+    public final byte layer
+    public final org.mapsforge.core.model.LatLong position
+    public final java.util.List<org.mapsforge.core.model.Tag> tags
+
+class org.mapsforge.map.datastore.Way
+    public final org.mapsforge.core.model.LatLong labelPosition
+    public final org.mapsforge.core.model.LatLong[][] latLongs
+    public final byte layer
+    public final java.util.List<org.mapsforge.core.model.Tag> tags
+
+class org.mapsforge.map.reader.header.MapFileInfo
+    public final org.mapsforge.core.model.BoundingBox boundingBox
+    public final java.lang.String comment
+    public final java.lang.String createdBy
+    public final boolean debugFile
+    public final long fileSize
+    public final int fileVersion
+    public final java.lang.String languagesPreference
+    public final long mapDate
+    public final byte numberOfSubFiles
+    public final org.mapsforge.core.model.Tag[] poiTags
+    public final java.lang.String projectionName
+    public final org.mapsforge.core.model.LatLong startPosition
+    public final java.lang.Byte startZoomLevel
+    public final int tilePixelSize
+    public final org.mapsforge.core.model.Tag[] wayTags
+    public final byte zoomLevelMax
+    public final byte zoomLevelMin
+
