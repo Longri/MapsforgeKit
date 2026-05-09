@@ -38,3 +38,25 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Xcode ###
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+DerivedData/
+*.hmap
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.dSYM
+*.dSYM.zip
+*.ipa
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+### Swift Package Manager ###
+.build/
+.swiftpm/
+Packages/
+Package.pins
